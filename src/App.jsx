@@ -13,15 +13,15 @@ function App() {
 
   return (
     <div>
-     <NavBar/>
-     <Home/>
-     <Popular/>
-     <Offers/>
-     {/* <About/>
-     <Blog/>
-     <Fotter/> */}
+      <NavBar />
+      <Home />
+      <Popular />
+      <Offers />
+      <About />
+      <Blog />
+      <Fotter />
     </div>
-  )
+  );
 }
 
 export default App
