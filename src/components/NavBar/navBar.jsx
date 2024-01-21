@@ -8,27 +8,26 @@ import { TbGridDots } from "react-icons/tb";
 function NavBar() {
   // code to toggle naviagtion bar
   const [active, setActive] = useState("navBar");
-  const [transparent , setTransparent] = useState('header')
+  const [transparent, setTransparent] = useState("header");
 
   function showNav() {
     setActive("navBar activeNavbar");
   }
 
-	function hideNavBar () {
-		setActive('navBar')
-	}
+  function hideNavBar() {
+    setActive("navBar");
+  }
 
   // code to add background color
-const addBg = ()=> {
-  if(window.scrollY >= 10){
-    setTransparent('header activeHeader')
-  }
-  else{
-    setTransparent('header')
-  }
-}
+  const addBg = () => {
+    if (window.scrollY >= 10) {
+      setTransparent("header activeHeader");
+    } else {
+      setTransparent("header");
+    }
+  };
 
-window.addEventListener('scroll', addBg)
+  window.addEventListener("scroll", addBg);
 
   return (
     <section className="navBarSection">
@@ -37,7 +36,7 @@ window.addEventListener('scroll', addBg)
           <a href="#" className="logo">
             <h1 className="flex">
               {" "}
-              <SiYourtraveldottv className="icon" /> Dot
+              <SiYourtraveldottv className="icon" /> On Time Taxi
             </h1>
           </a>
         </div>

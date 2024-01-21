@@ -15,7 +15,7 @@ function Fotter() {
             <a href="#" className="logo flex">
               <h1 className="flex">
                 <SiYourtraveldottv className="icon" />
-                Dot
+                On Time Taxi
               </h1>
             </a>
           </div>
@@ -24,6 +24,22 @@ function Fotter() {
             <BsTwitterX className="icon" />
             <AiFillInstagram className="icon" />
           </div>
+        </div>
+
+        <div className="fotterLinks">
+          <span className="linkTitle">Helpful Links</span>
+          <li>
+            <a href="#"> Destination </a>
+          </li>
+          <li>
+            <a href="#"> Support </a>
+          </li>
+          <li>
+            <a href="#"> Tracel and conditions </a>
+          </li>{" "}
+          <li>
+            <a href="#"> Privacy</a>
+          </li>
         </div>
 
         <div className="fotterLinks">

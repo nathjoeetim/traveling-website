@@ -13,6 +13,8 @@
 
 .about {
   .secContainer {
+    /* gap: 10px !; */
+
     .title {
       color: var(--blackColor);
       line-height: 1.5rem;
@@ -50,47 +52,85 @@
     }
 
     .videoCard {
-      margin-top: 2rem;
-      background: linear-gradient(rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.609)),url('../../assets/map.jpeg');
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
+      margin-top: 2rem !important;
+      background: linear-gradient(rgba(0, 0, 0, 0.609), rgba(0, 0, 0, 0.609)),
+        url("../../assets/map.jpeg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
 
-			.cardContent{
-				gap: 2rem;
-				padding: 2rem 1rem;
+      .cardContent {
+        gap: 2rem;
+        padding: 2rem 1rem;
 
-				.cardText{
-					h2{
-						color: var(--whiteColor);
-						font-weight: 600;
-						padding-bottom: 1rem;
-					}
+        .cardText {
+          h2 {
+            color: var(--whiteColor);
+            font-weight: 600;
+            padding-bottom: 1rem;
+          }
 
-					p{
-						color: var(--whiteColor);
-						opacity: .7;
-						font-size: 12px;
-						font-weight: 400;
-						letter-spacing: 1px;
-					}
-				}
-			}
+          p {
+            color: var(--whiteColor);
+            opacity: 0.7;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 1px;
+          }
+        }
+      }
 
-			.cardVideo{
-					border: 2px solid var(--whiteColor);
-					height: 200px;
-					width: 100%;
-					border-radius: 10px;
-					overflow: hidden;
+      .cardVideo {
+        border: 2px solid var(--whiteColor);
+        height: 200px;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
 
-					video{
-						height: 100%;
-						width: 100%;
-						object-fit: cover;
-					}
-			}
+        video {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
 
+@media screen and (min-width: 720px) {
+  .about {
+    /* margin-top: 2rem; */
+    .secContainer {
+      /* gap: 20px; */
+      .videoCard {
+        margin-top: 2rem;
+        .cardContent {
+          gap: 4rem;
+          padding: 4rem 3rem;
+          .cardText {
+            h2 {
+              font-size: 2rem;
+            }
+            p {
+              opacity: 0.7;
+              font-size: 15px;
+            }
+          }
+        }
+        .cardContent {
+          grid-template-columns: repeat(2, 1fr) !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .about{
+    .secContainer{
+      .mainContent{
+        padding: 2.5rem 0;
+      }
     }
   }
 }
