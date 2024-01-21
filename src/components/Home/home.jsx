@@ -13,10 +13,10 @@ function Home() {
       <div className="secContainer container">
         <div className="homeText">
           <h1 data-aos="fade-up" className="title">
-            Plan Your Trip With Travel Dot
+            Plan Your Trip With On Time taxi
           </h1>
           <p data-aos="fade-up" data-aos-duration="2500" className="subTitle">
-            Travel to your favorite city with respectful of environment
+            Travel to your favorite city with On Time taxi
           </p>
 
           <button data-aos="fade-up" data-aos-duration="3000" className="btn">
@@ -46,11 +46,11 @@ function Home() {
             data-aos-duration="3000"
             className="priceDiv"
           >
-            <label htmlFor="price">Price</label>
-            <input type="text" placeholder="$140-$500" />
+            <label htmlFor="price">Time</label>
+            <input type="text" placeholder="Three hours from now " />
           </div>
 
-          <button className="btn">Search</button>
+          <button className="btn">Book</button>
         </div>
       </div>
     </section>
