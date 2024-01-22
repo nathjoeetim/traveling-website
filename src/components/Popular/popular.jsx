@@ -77,7 +77,6 @@ function Popular() {
                       <span className="dot">
                         <BsDot className="icon" />
                       </span>
-                      Dot
                     </span>
                   </div>
                 </div>
